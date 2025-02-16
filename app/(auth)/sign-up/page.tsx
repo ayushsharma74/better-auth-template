@@ -16,10 +16,13 @@ export default function Home() {
       name,
       callbackURL: "/dash"
     }, {
-      onRequest: (ctx) => {
+      onRequest: () => {
         setLoading(true);
       },
-      onSuccess: (ctx) => {
+      onSuccess: () => {
+        setLoading(false);
+      },
+      onError: () => {
         setLoading(false);
       }
     })
