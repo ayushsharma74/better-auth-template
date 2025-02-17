@@ -14,7 +14,7 @@ export default function Home() {
       email,
       password,
       name,
-      callbackURL: "/dash"
+      callbackURL: "/dashboard"
     }, {
       onRequest: () => {
         setLoading(true);
